@@ -10,6 +10,12 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+
+        /* Active class styling */
+        .active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900">
@@ -55,42 +61,41 @@
     </div>
 
     <main class="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
-        <section id="home" class="text-center mb-16">
-            <h2 class="text-4xl sm:text-5xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Welcome!</h2>
-            <img src="images/m.jpg" alt="Your Photo" class="rounded-full mx-auto mb-6 w-48 h-48 sm:w-64 sm:h-64 border-4 border-indigo-300 dark:border-indigo-700">
+        <section id="home" role="region" aria-labelledby="home-heading" class="text-center mb-16">
+            <h2 id="home-heading" class="text-4xl sm:text-5xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Welcome!</h2>
+            <img src="images/m.jpg" alt="Photo of Maviya Khot" class="rounded-full mx-auto mb-6 w-48 h-48 sm:w-64 sm:h-64 border-4 border-indigo-300 dark:border-indigo-700">
             <p class="text-gray-700 dark:text-gray-300 text-lg sm:text-xl mb-8">
-                I'm Maviya khot, and I'm excited to share my journey with you.
+                I'm Maviya Khot, and I'm excited to share my journey with you.
             </p>
             <div class="flex justify-center">
                 <a href="#about" class="bg-indigo-500 dark:bg-indigo-600 text-white py-3 px-6 rounded-full hover:bg-indigo-600 dark:hover:bg-indigo-700 transition duration-300 text-lg sm:text-xl">Learn More</a>
             </div>
         </section>
 
-        <section id="about" class="mb-16">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 dark:text-white mb-6 text-center">About Me</h2>
+        <section id="about" role="region" aria-labelledby="about-heading" class="mb-16">
+            <h2 id="about-heading" class="text-3xl sm:text-4xl font-semibold text-gray-800 dark:text-white mb-6 text-center">About Me</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <p class="text-gray-700 dark:text-gray-300 text-lg sm:text-xl">
-                        Hello! Im'Maviya khot, and I'm passionate about web development. I'm currently based in Mumbai.
+                        Hello! I'm Maviya Khot, and I'm passionate about web development. I'm currently based in Mumbai.
                     </p>
                     <p class="text-gray-700 dark:text-gray-300 text-lg sm:text-xl mt-4">
-                        I studied at st jhon collage of engineering and I'm proficient in English,hindi,Marathi.
+                        I studied at St. John College of Engineering, and I'm proficient in English, Hindi, and Marathi.
                     </p>
                 </div>
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">My Skills</h3>
                     <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 text-lg sm:text-xl space-y-2">
-                        <li>Front-end Development:</li>
-                        <li>java</li>
-                        <li>Data bases</li>
-                       
+                        <li>Front-end Development</li>
+                        <li>Java</li>
+                        <li>Databases</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="achievements" class="mb-16">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Achievements</h2>
+        <section id="achievements" role="region" aria-labelledby="achievements-heading" class="mb-16">
+            <h2 id="achievements-heading" class="text-3xl sm:text-4xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Achievements</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
                     <h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">Achievement 1</h3>
@@ -107,49 +112,48 @@
             </div>
         </section>
 
-        <section id="goals" class="mb-16">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Future Goals</h2>
+        <section id="goals" role="region" aria-labelledby="goals-heading" class="mb-16">
+            <h2 id="goals-heading" class="text-3xl sm:text-4xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Future Goals</h2>
             <div class="space-y-4">
                 <p class="text-gray-700 dark:text-gray-300 text-lg sm:text-xl">
-                    My primary goal is to [Your Main Goal]. I aim to contribute to [Your Contribution Area] by [Your Contribution Method].
+                    My primary goal is to become a full-stack developer. I aim to contribute to the tech community by building accessible and scalable applications.
                 </p>
                 <p class="text-gray-700 dark:text-gray-300 text-lg sm:text-xl">
-                    In the future, I aspire to [Your Aspiration] and [Your Other Aspiration].
+                    In the future, I aspire to work with cutting-edge technologies and contribute to open-source projects.
                 </p>
             </div>
         </section>
 
-        <section id="personal" class="mb-16">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Personal Side</h2>
+        <section id="personal" role="region" aria-labelledby="personal-heading" class="mb-16">
+            <h2 id="personal-heading" class="text-3xl sm:text-4xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Personal Side</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Hobbies</h3>
                     <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 text-lg sm:text-xl space-y-2">
-                        <li>Learning new skills </li>
-                        <li>Adventurestic </li>
-                        <li>New technologies </li>
+                        <li>Learning new skills</li>
+                        <li>Adventurous activities</li>
+                        <li>Exploring new technologies</li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Role Models</h3>
                     <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 text-lg sm:text-xl space-y-2">
-                        <li>Dr APJ Abdul kalam </li>
-                      
+                        <li>Dr. APJ Abdul Kalam</li>
                     </ul>
                 </div>
             </div>
             <div class="mt-8">
                 <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Favorites</h3>
                 <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 text-lg sm:text-xl space-y-2">
-                    <li>Book:Wings of Fire: An Autobiography</li>
-                    <li>Website</li>
-                    <li>Startup: AMAZON company</li>
+                    <li>Book: Wings of Fire: An Autobiography</li>
+                    <li>Website: StackOverflow</li>
+                    <li>Startup: Amazon</li>
                 </ul>
             </div>
             <div class="mt-8">
                 <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Volunteering</h3>
                 <p class="text-gray-700 dark:text-gray-300 text-lg sm:text-xl">
-                    Good experience in NSS activities
+                    I have good experience in NSS activities.
                 </p>
             </div>
         </section>
@@ -164,7 +168,7 @@
         const mobileMenu = document.getElementById("mobile-menu");
         const closeMenuBtn = document.getElementById("close-menu-btn");
         const mobileMenuLinks = mobileMenu.querySelectorAll("a");
-        const navLinks = document.querySelectorAll('.nav-links a');
+        const navLinks = document.querySelectorAll('nav a');
         const sections = document.querySelectorAll('section');
 
         function toggleMobileMenu() {
@@ -178,8 +182,8 @@
         });
 
         document.addEventListener('click', (event) => {
-            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
-                toggleMobileMenu();
+            if (!mobileMenu.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
             }
         });
 
@@ -206,7 +210,6 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
